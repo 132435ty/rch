@@ -24,7 +24,8 @@
             android:layout_marginTop="20dp"
             android:text="Почта"
             android:textColor="#818181"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
@@ -34,7 +35,8 @@
             android:hint="***********@mail.com"
             android:inputType="textEmailAddress"
             android:textColorHint="#CFCFCF"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -43,7 +45,8 @@
             android:layout_marginTop="20dp"
             android:text="пароль"
             android:textColor="#818181"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
@@ -54,7 +57,8 @@
             android:hint="**********"
             android:inputType="textPassword"
             android:textColorHint="#CFCFCF"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="Autofill,HardcodedText" />
 
     </LinearLayout>
 
@@ -69,7 +73,8 @@
         app:cornerRadius="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -79,7 +84,8 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck">
 
         <TextView
             android:id="@+id/textView"
@@ -88,7 +94,8 @@
             android:text="Добро пожаловать"
             android:textColor="#3A3A3A"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/textView2"
@@ -97,19 +104,21 @@
             android:marqueeRepeatLimit="marquee_forever"
             android:text="Заполните почту и пароль чтобы продолжить"
             android:textColor="#818181"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,TextContrastCheck" />
     </LinearLayout>
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="145dp"
-        android:layout_height="24dp"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
         android:fontFamily="@font/roboto_thin"
         android:gravity="center"
         android:text="Запомнить меня"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/password10"
@@ -122,6 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+        app:layout_constraintTop_toTopOf="@+id/checkBox"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
