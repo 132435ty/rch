@@ -1,5 +1,6 @@
 package com.grobik.fd
 
+import android.content.Intent
 import android.graphics.Paint
 import android.os.Bundle
 import android.widget.TextView
@@ -14,7 +15,8 @@ class forPas : AppCompatActivity() {
         val text = findViewById<TextView>(R.id.password11)
         text.setOnClickListener {
             if (text.text != "Что-то") {
-                text.text = "Что-то"
+                val intent = Intent(this, LogInActivity::class.java)
+                startActivity(intent)
             }
 
         }
