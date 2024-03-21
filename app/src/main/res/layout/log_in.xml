@@ -122,7 +122,7 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/password10"
+        android:id="@+id/password11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"

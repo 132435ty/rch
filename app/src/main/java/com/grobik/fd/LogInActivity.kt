@@ -10,7 +10,7 @@ class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.log_in)
-        val text = findViewById<TextView>(R.id.password10)
+        val text = findViewById<TextView>(R.id.password11)
         text.paintFlags = Paint.UNDERLINE_TEXT_FLAG
         text.setOnClickListener {
             if (text.text != "Что-то") {
