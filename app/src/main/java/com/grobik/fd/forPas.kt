@@ -18,7 +18,6 @@ class forPas : AppCompatActivity() {
                 val intent = Intent(this, LogInActivity::class.java)
                 startActivity(intent)
             }
-
         }
     }
 }
