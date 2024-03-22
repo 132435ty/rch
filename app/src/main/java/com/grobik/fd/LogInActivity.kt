@@ -21,5 +21,12 @@ class LogInActivity : AppCompatActivity() {
             }
 
         }
+        val text1 = findViewById<TextView>(R.id.textView7)
+        text1.setOnClickListener {
+            if (text1.text != "Что-то") {
+                val intent = Intent(this, SignUp::class.java)
+                startActivity(intent)
+            }
+        }
     }
 }
